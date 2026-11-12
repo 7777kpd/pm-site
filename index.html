@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Прибыльный менеджмент — Дорощук Консалтинг</title>
+<meta name="description" content="Как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег. 10-недельный консалтинг в вашем бизнесе.">
+<meta name="theme-color" content="#1C1612">
+<link rel="canonical" href="https://doroshchukconsulting.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Дорощук Консалтинг">
+<meta property="og:title" content="Прибыльный менеджмент">
+<meta property="og:description" content="Как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег. 10-недельный консалтинг в вашем бизнесе.">
+<meta property="og:url" content="https://doroshchukconsulting.com/">
+<meta property="og:image" content="https://doroshchukconsulting.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: тёмные и кремовые полосы во всю ширину, контент в колонке 1200px; бронза — единственный акцент */
+:root {
+  --espresso: #1C1612;
+  --espresso-2: #231C17;
+  --card: #2E241D;
+  --line-dark: #3F3229;
+  --cream: #EFE7DC;
+  --ink: #2A211B;
+  --ink-2: #4E4036;
+  --on-dark: #F7F0E6;
+  --on-dark-2: #CBBBA9;
+  --bronze: #C99567;
+  --bronze-deep: #8A5A34;
+  --focus: #E8B68A;
+  --display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --text: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body { margin: 0; background: var(--espresso); color: var(--on-dark); font-family: var(--text); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band-dark { background: var(--espresso); color: var(--on-dark); }
+.band-dark-2 { background: var(--espresso-2); color: var(--on-dark); }
+.band-cream { background: var(--cream); color: var(--ink); }
+.eyebrow { margin: 0 0 18px; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.band-cream .eyebrow { color: var(--bronze-deep); }
+.band-dark .eyebrow, .band-dark-2 .eyebrow { color: var(--bronze); }
+h1, h2 { font-family: var(--display); font-weight: 600; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(32px, 5vw, 48px); line-height: 1.12; max-width: 920px; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 24px; border-bottom: 1px solid #3A2E25; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--on-dark); text-decoration: none; font-weight: 800; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--espresso); }
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--espresso); border-bottom: 1px solid #3A2E25; }
+.topbar .top { border-bottom: 0; padding-block: 14px; }
+.msgr.compact { margin-top: 0; gap: 8px; transition: opacity .2s; }
+.topbar.calm .msgr.compact { opacity: 0; visibility: hidden; pointer-events: none; }
+.msgr.compact a { min-height: 44px; padding: 0 14px 0 6px; gap: 8px; font-size: 13px; }
+.msgr.compact .ic { width: 32px; height: 32px; }
+.msgr.compact .ic svg { width: 18px; height: 18px; }
+@media (max-width: 520px) { .msgr.compact .lbl { display: none; } .msgr.compact a { padding: 0 6px; } .brand { font-size: 12px; } }
+
+.hero { display: flex; flex-wrap: wrap; gap: 48px 56px; align-items: center; padding-block: 56px 80px; }
+.hero-photo { flex: 1 1 300px; max-width: 440px; margin: 0; }
+.hero-text { flex: 999 1 460px; max-width: 720px; min-width: 0; }
+.hero h1 { font-size: clamp(42px, 6vw, 64px); line-height: 1.02; color: var(--on-dark); }
+.hero .lead { margin: 24px 0 0; font-size: clamp(18px, 2.2vw, 21px); line-height: 1.5; color: #D6C8B8; max-width: 34ch; }
+.badge { margin: 20px 0 0; font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bronze); }
+
+.author { display: block; margin-top: 36px; padding-top: 24px; border-top: 1px solid #3A2E25; max-width: 520px; }
+.author b { display: block; font-size: 16px; color: var(--on-dark); }
+.author span { display: block; font-size: 14px; color: var(--on-dark-2); }
+.case { padding-block: 88px 96px; }
+.case h2 { color: var(--ink); }
+.video-frame.has-cover { background: #1C1612; }
+.case .video figcaption { margin-top: 14px; font-size: 18px; font-weight: 700; line-height: 1.35; color: var(--ink); max-width: 860px; }
+.vc-kicker { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bronze-deep); }
+
+.duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin: 28px 0 0; max-width: 760px; font-variant-numeric: tabular-nums; }
+.duo-card { border: 1px solid #DCCFC2; background: #FBF8F3; border-radius: 8px; padding: 22px 24px; display: flex; flex-direction: column; gap: 6px; }
+.duo-card.win { border: 2px solid var(--bronze-deep); background: #FFFDF9; }
+.duo-title { margin: 0 0 8px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.win .duo-title { color: var(--bronze-deep); }
+.duo-line { margin: 0; font-size: 16px; color: var(--ink-2); }
+.duo-line b { font-size: 22px; color: var(--ink); font-weight: 800; margin-right: 4px; }
+.duo-ros { margin: 12px 0 0; padding: 12px 14px; border-radius: 6px; background: #EFE7DC; display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; color: var(--ink); }
+.duo-ros { flex-wrap: wrap; gap: 4px 12px; }
+.duo-ros span { font-size: 15px; line-height: 1.3; }
+.duo-ros i { font-style: normal; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; color: var(--ink-2); margin-left: 4px; }
+.duo-ros b { font-size: 26px; font-weight: 800; }
+.win .duo-ros { background: rgba(201,149,103,0.22); }
+.win .duo-ros b { color: var(--bronze-deep); }
+.duo-sum { margin-top: 2px; }
+.duo-sum .eq { font-size: 22px; font-weight: 800; color: var(--ink); margin-right: 6px; }
+.duo-minus { margin: -2px 0 4px; font-size: 13px; line-height: 1.5; color: #8A7A6C; }
+.duo { margin-bottom: 40px; }
+
+.case .video { max-width: none; }
+.case .video-frame { max-width: 860px; }
+.best .p-ros { background: rgba(201,149,103,0.22); }
+.best .p-ros b { color: var(--bronze-deep); }
+
+.video { max-width: 860px; min-width: 0; margin: 0; }
+.video-frame { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: radial-gradient(120% 90% at 30% 20%, #3A2D23 0%, #241C16 60%, #1A1410 100%); border: 1px solid #3A2E25; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.play { width: 88px; height: 88px; border-radius: 50%; border: 0; background: var(--bronze); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform .2s; }
+.play:hover { transform: scale(1.05); }
+.video-msg { position: absolute; left: 18px; right: 18px; bottom: 18px; margin: 0; font-size: 14px; color: var(--on-dark-2); }
+.video figcaption { margin-top: 16px; font-size: 16px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; }
+
+.program { padding-block: 96px 104px; }
+.program h2 { color: var(--on-dark); }
+.program .intro { margin: 20px 0 0; font-size: 19px; line-height: 1.5; color: var(--on-dark-2); max-width: 60ch; }
+.topics { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px; }
+.topic { background: var(--card); border: 1px solid var(--line-dark); border-radius: 8px; padding: 28px 30px; display: flex; gap: 20px; }
+.topic .n { flex: 0 0 auto; width: 28px; font-family: var(--display); font-size: 42px; line-height: 1; font-weight: 600; color: var(--bronze); }
+.topic .body { min-width: 0; }
+.topic h3 { margin: 0 0 8px; font-size: 19px; line-height: 1.35; font-weight: 700; color: var(--on-dark); text-wrap: balance; }
+.topic .label { margin: 0 0 10px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bronze); }
+.topic .desc { margin: 0; font-size: 15.5px; line-height: 1.55; color: var(--on-dark-2); }
+.topics > .topic:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+.request { padding-block: 96px 112px; }
+.status { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; font-size: 15px; font-weight: 600; color: var(--ink); }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #3E8E5A; box-shadow: 0 0 0 4px rgba(62,142,90,0.18); }
+.msgr { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.msgr .ic { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: rgba(201,149,103,0.22); color: var(--bronze); flex: 0 0 auto; }
+.msgr .tg .ic { background: rgba(138,90,52,0.14); color: var(--bronze-deep); }
+.msgr .tg:hover .ic { background: rgba(201,149,103,0.22); color: var(--bronze); }
+.msgr a { display: inline-flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 24px 0 12px; border-radius: 6px; font-weight: 800; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; transition: background .2s, color .2s; }
+.msgr .wa { background: var(--ink); color: var(--on-dark); }
+.msgr .wa:hover { background: #3A2E25; }
+.msgr .tg { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.msgr .tg:hover { background: var(--ink); color: var(--on-dark); }
+.msgr-note { margin: 14px 0 0; font-size: 14px; color: var(--ink-2); max-width: 46ch; }
+.msgr.dark .wa { background: var(--bronze); color: var(--espresso); }
+.msgr.dark .wa:hover { background: #D8A679; }
+.msgr.dark .wa .ic { background: rgba(28,22,18,0.14); color: var(--espresso); }
+.msgr.dark .tg { color: var(--on-dark); border-color: var(--bronze); }
+.msgr.dark .tg:hover { background: rgba(201,149,103,0.14); color: var(--on-dark); }
+.msgr.dark .tg .ic, .msgr.dark .tg:hover .ic { background: rgba(201,149,103,0.22); color: var(--bronze); }
+.dark-note { margin: 14px 0 0; font-size: 15px; line-height: 1.45; color: var(--on-dark-2); max-width: 46ch; }
+.request-inner { max-width: 760px; }
+.request-inner > p:not([class]) { margin: 20px 0 0; font-size: 18px; line-height: 1.55; color: var(--ink-2); max-width: 46ch; }
+
+.foot { padding-block: 32px; border-top: 1px solid #3A2E25; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #A8957F; }
+
+.hero-photo img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 8px; border: 1px solid #3A2E25; }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+
+<div class="topbar calm" id="topbar">
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#top" id="top">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 4h6l8 10-8 10H4l8-10z" fill="#8A6446"/><path d="M14 4h6l8 10-8 10h-6l8-10z" fill="#C99567"/></svg>
+        Прибыльный менеджмент
+      </a>
+      <nav class="msgr dark compact" aria-label="Написать в мессенджер">
+        <a class="wa js-wa" href="https://wa.me/4367762319079" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" stroke-width="2.6"/></svg></span><span class="lbl">WhatsApp</span></a>
+        <a class="tg js-tg" href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener" aria-label="Написать в Telegram"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l16-7-5 15-3-6z"/><path d="M12 14l8-9"/></svg></span><span class="lbl">Telegram</span></a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<div class="band-dark">
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Прибыльный менеджмент</h1>
+        <p class="lead">Как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег.</p>
+        <p class="badge">10-недельный консалтинг в вашем бизнесе</p>
+        <div class="msgr dark" id="hero-cta">
+          <a class="wa js-wa" href="https://wa.me/4367762319079" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" stroke-width="2.6"/></svg></span>WhatsApp</a>
+          <a class="tg js-tg" href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l16-7-5 15-3-6z"/><path d="M12 14l8-9"/></svg></span>Telegram</a>
+        </div>
+        <p class="dark-note">Напишите. 15 минут разговора: услышим задачу и предложим, что включить в программу.</p>
+        <div class="author"><div><b>Николай Дорощук</b><span>Международный консалтинговый бизнес с 2001 года · работал с 1000+ руководителями</span></div></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="photo.jpg" width="720" height="914" alt="Николай Дорощук" fetchpriority="high">
+      </figure>
+    </section>
+  </div>
+</div>
+
+<section class="band-cream" id="case">
+  <div class="wrap case">
+    <p class="eyebrow">Пример одной компании</p>
+    <h2>Продажи ≠ прибыль</h2>
+    <div class="duo">
+      <div class="duo-card">
+        <p class="duo-title">Больше продаж — меньше прибыли</p>
+        <p class="duo-line"><b>82 млн €</b> продаж</p>
+        <p class="duo-minus">− себестоимость<br>− отдел продаж и маркетинг</p>
+        <p class="duo-line duo-sum"><span class="eq">=</span><b>10,6 млн €</b> прибыли после продаж</p>
+        <p class="duo-ros"><span>Рентабельность продаж <i>ROS</i></span><b>12,9%</b></p>
+      </div>
+      <div class="duo-card win">
+        <p class="duo-title">Меньше продаж — больше прибыли</p>
+        <p class="duo-line"><b>69 млн €</b> продаж</p>
+        <p class="duo-minus">− себестоимость<br>− отдел продаж и маркетинг</p>
+        <p class="duo-line duo-sum"><span class="eq">=</span><b>13,6 млн €</b> прибыли после продаж</p>
+        <p class="duo-ros"><span>Рентабельность продаж <i>ROS</i></span><b>19,7%</b></p>
+      </div>
+    </div>
+    <figure class="video">
+      <div class="video-frame">
+        <button class="play" id="play" type="button" aria-label="Смотреть видео">
+          <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg>
+        </button>
+      </div>
+      <figcaption><span class="vc-kicker">Видео</span> Почему больше продаж не означает больше прибыли?</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band-dark-2" id="program">
+  <div class="wrap program">
+    <p class="eyebrow">Программа · 10 недель</p>
+    <h2>Семь вопросов, на которые бизнес получает ответ в своих цифрах</h2>
+    <p class="intro">Работаем внутри вашей компании, на ваших данных.</p>
+
+    <ol class="topics">
+      <li class="topic"><span class="n">1</span><div class="body">
+        <h3>Оборот растёт, а прибыли не больше. Где она?</h3>
+        <p class="label">Почему рост продаж не равен росту прибыли</p>
+        <p class="desc">Откуда бизнес зарабатывает и какие управленческие решения съедают прибыль.</p>
+      </div></li>
+      <li class="topic"><span class="n">2</span><div class="body">
+        <h3>Какую отдачу дают деньги, вложенные в продажи и маркетинг?</h3>
+        <p class="label">Прибыль после продаж</p>
+        <p class="desc">Находим, как её увеличить: через качественный рост продаж и оптимальную структуру торгового отдела.</p>
+      </div></li>
+      <li class="topic"><span class="n">3</span><div class="body">
+        <h3>Где команда работает по правилам клиента и сколько это стоит?</h3>
+        <p class="label">Дистрибуция</p>
+        <p class="desc">Клиентская база, каналы продаж и системность каждого контакта с точкой.</p>
+      </div></li>
+      <li class="topic"><span class="n">4</span><div class="body">
+        <h3>Какая часть денег в запасах и дебиторке лишняя при вашем обороте?</h3>
+        <p class="label">Ассортимент и товарные запасы</p>
+        <p class="desc">Прибыльность портфеля, оборачиваемость и отдача на оборотный капитал.</p>
+      </div></li>
+      <li class="topic"><span class="n">5</span><div class="body">
+        <h3>Какие KPI дают прибыльный рост продаж, а не просто продажи?</h3>
+        <p class="label">KPI и мотивация</p>
+        <p class="desc">Выстраиваем KPI на каждом уровне — от агента до директора — так, чтобы они вели к прибыльному росту.</p>
+      </div></li>
+      <li class="topic"><span class="n">6</span><div class="body">
+        <h3>Как видеть отклонения каждый день, а не в конце месяца?</h3>
+        <p class="label">ИИ в прибыльном менеджменте</p>
+        <p class="desc">Дашборды и ИИ-ассистент руководителя: отклонения, рекомендации, контроль изменений.</p>
+      </div></li>
+      <li class="topic"><span class="n">7</span><div class="body">
+        <h3>Как не заработать сегодня ценой завтрашнего?</h3>
+        <p class="label">Кодекс прибыльного менеджмента</p>
+        <p class="desc">Скидка ради плана, закуп под бонус поставщика, отсрочка ради объёма — правила решений, которые сохраняют прибыль.</p>
+      </div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band-cream" id="request">
+  <div class="wrap request">
+    <div class="request-inner">
+        <p class="eyebrow">Связаться</p>
+        <h2>Напишите нам</h2>
+        <p>15 минут разговора: услышим вашу задачу, поясним формат и вместе решим, что включить в программу.</p>
+        <p class="status"><span class="dot" aria-hidden="true"></span>Обычно отвечаем сразу</p>
+        <div class="msgr">
+          <a class="wa js-wa" href="https://wa.me/4367762319079" target="_blank" rel="noopener">
+            <span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" stroke-width="2.6"/></svg></span>
+            WhatsApp
+          </a>
+          <a class="tg js-tg" href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">
+            <span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l16-7-5 15-3-6z"/><path d="M12 14l8-9"/></svg></span>
+            Telegram
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<footer class="band-dark">
+  <div class="wrap foot">
+    <span>Дорощук Консалтинг · Прибыльный менеджмент и STT Navigator</span>
+    <span>Консалтинг и решения на базе ИИ для дистрибуции</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* Контакты и видео — меняются здесь */
+  var WA_NUMBER = '4367762319079';
+  var TG_USERNAME = 'DoroshchukConsulting';
+  var FIRST_MESSAGE = 'Здравствуйте! Я с сайта «Прибыльный менеджмент».';
+  var YOUTUBE_ID = '';  /* id ролика, например dQw4w9WgXcQ из ссылки youtu.be/dQw4w9WgXcQ */
+  var CHANNEL_URL = 'https://www.youtube.com/@ПрибыльныйМенеджмент';
+
+  var text = encodeURIComponent(FIRST_MESSAGE);
+  document.querySelectorAll('.js-wa').forEach(function (a) { a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + text; });
+  document.querySelectorAll('.js-tg').forEach(function (a) { a.href = 'https://t.me/' + TG_USERNAME + '?text=' + text; });
+
+  var bar = document.getElementById('topbar');
+  var watched = [document.getElementById('hero-cta'), document.getElementById('request')];
+  function onScreen(el) { if (!el) return false; var r = el.getBoundingClientRect(); return r.bottom > 80 && r.top < window.innerHeight; }
+  function updateBar() { bar.classList.toggle('calm', watched.some(onScreen)); }
+  window.addEventListener('scroll', updateBar, { passive: true });
+  window.addEventListener('resize', updateBar);
+  updateBar();
+
+  var play = document.getElementById('play');
+  play.addEventListener('click', function () {
+    if (!YOUTUBE_ID) { window.open(CHANNEL_URL, '_blank', 'noopener'); return; }
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + YOUTUBE_ID + '?autoplay=1&rel=0';
+    f.title = 'Почему больше продаж не означает больше прибыли?';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    play.parentNode.appendChild(f);
+    play.remove();
+  });
+})();
+</script>
+</body>
+</html>
