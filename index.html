@@ -108,6 +108,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .author span { display: block; font-size: 14px; color: var(--on-dark-2); }
 .case { padding-block: 88px 96px; }
 .case h2 { color: var(--ink); }
+.case-note { margin: 14px 0 28px; font-size: 17px; line-height: 1.5; color: var(--ink-2); max-width: 46ch; }
 .video-frame.has-cover { background: #1C1612 url(video-cover.jpg) center / cover no-repeat; align-items: flex-end; justify-content: flex-start; padding: 0 0 5.5% 5.6%; box-sizing: border-box; }
 .video-frame.has-cover .play { width: clamp(48px, 10vw, 88px); height: clamp(48px, 10vw, 88px); box-shadow: 0 6px 24px rgba(0,0,0,.45); }
 .video-frame.has-cover .play svg { width: 40%; height: 40%; }
@@ -242,8 +243,9 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 <section class="band-cream" id="case">
   <div class="wrap case">
-    <p class="eyebrow">Пример одной компании</p>
+    <p class="eyebrow">Главное из видео</p>
     <h2>Продажи ≠ прибыль</h2>
+    <p class="case-note">Коротко, если нет времени смотреть: одна компания, два периода.</p>
     <div class="duo">
       <div class="duo-card">
         <p class="duo-title">Больше продаж — меньше прибыли</p>
