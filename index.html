@@ -184,6 +184,17 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 .hero-photo img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 8px; border: 1px solid #3A2E25; }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.hero-photo { position: relative; }
+.hp-play { position: absolute; inset: 0; width: 100%; border: 0; padding: 0 20px 20px; border-radius: 8px; cursor: pointer; display: flex; align-items: flex-end; gap: 14px; text-align: left; background: linear-gradient(to top, rgba(20,15,12,.92) 0%, rgba(20,15,12,.55) 28%, rgba(20,15,12,0) 50%); font: inherit; color: var(--on-dark); }
+.hp-btn { flex: 0 0 auto; width: 64px; height: 64px; border-radius: 50%; background: var(--bronze); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(0,0,0,.45); transition: transform .2s; }
+.hp-play:hover .hp-btn { transform: scale(1.06); }
+.hp-txt { font-size: 16px; font-weight: 700; line-height: 1.3; padding-bottom: 4px; }
+.hp-txt i { display: block; font-style: normal; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--bronze); margin-bottom: 4px; }
+.vmodal { position: fixed; inset: 0; z-index: 100; background: rgba(12,9,7,.92); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.vmodal .vbox { position: relative; width: min(1100px, 100%); aspect-ratio: 16 / 9; }
+.vmodal iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; }
+.vmodal .vclose { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(239,231,220,.15); color: #EFE7DC; font-size: 24px; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -220,6 +231,10 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
       </div>
       <figure class="hero-photo">
         <img src="photo.jpg" width="720" height="914" alt="Николай Дорощук" fetchpriority="high">
+        <button class="hp-play" id="play" type="button" aria-label="Смотреть видео: почему больше продаж не означает больше прибыли">
+          <span class="hp-btn" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 30 30"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg></span>
+          <span class="hp-txt"><i>Видео · разбор</i>Почему больше продаж не означает больше прибыли?</span>
+        </button>
       </figure>
     </section>
   </div>
@@ -245,14 +260,6 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
         <p class="duo-ros"><span>Рентабельность продаж <i>ROS</i></span><b>19,7%</b></p>
       </div>
     </div>
-    <figure class="video">
-      <div class="video-frame has-cover">
-        <button class="play" id="play" type="button" aria-label="Смотреть видео">
-          <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg>
-        </button>
-      </div>
-      <figcaption><span class="vc-kicker">Видео</span> Почему больше продаж не означает больше прибыли?</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -354,13 +361,18 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   var play = document.getElementById('play');
   play.addEventListener('click', function () {
     if (!YOUTUBE_ID) { window.open(CHANNEL_URL, '_blank', 'noopener'); return; }
+    var m = document.createElement('div'); m.className = 'vmodal';
+    m.innerHTML = '<div class="vbox"><button class="vclose" type="button" aria-label="Закрыть">×</button></div>';
     var f = document.createElement('iframe');
     f.src = 'https://www.youtube-nocookie.com/embed/' + YOUTUBE_ID + '?autoplay=1&rel=0';
     f.title = 'Почему больше продаж не означает больше прибыли?';
-    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-    f.allowFullscreen = true;
-    play.parentNode.appendChild(f);
-    play.remove();
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+    m.firstChild.appendChild(f);
+    function close() { m.remove(); document.removeEventListener('keydown', esc); }
+    function esc(e) { if (e.key === 'Escape') close(); }
+    m.addEventListener('click', function (e) { if (e.target === m || e.target.className === 'vclose') close(); });
+    document.addEventListener('keydown', esc);
+    document.body.appendChild(m);
   });
 })();
 </script>
