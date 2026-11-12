@@ -115,7 +115,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .case .video figcaption { margin-top: 14px; font-size: 18px; font-weight: 700; line-height: 1.35; color: var(--ink); max-width: 860px; }
 .vc-kicker { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bronze-deep); }
 
-.duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin: 28px 0 0; max-width: 760px; font-variant-numeric: tabular-nums; }
+.duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; margin: 28px 0 0; max-width: none; font-variant-numeric: tabular-nums; }
 .duo-card { border: 1px solid #DCCFC2; background: #FBF8F3; border-radius: 8px; padding: 22px 24px; display: flex; flex-direction: column; gap: 6px; }
 .duo-card.win { border: 2px solid var(--bronze-deep); background: #FFFDF9; }
 .duo-title { margin: 0 0 8px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
@@ -129,6 +129,12 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .duo-ros b { font-size: 26px; font-weight: 800; }
 .win .duo-ros { background: rgba(201,149,103,0.22); }
 .win .duo-ros b { color: var(--bronze-deep); }
+.duo-card.total { background: var(--espresso); border-color: var(--espresso); color: var(--on-dark); justify-content: center; }
+.total .duo-title { color: var(--bronze); }
+.tot-row { margin: 0; font-size: 17px; color: #D6C8B8; }
+.tot-row b { font-size: 34px; font-weight: 800; color: var(--on-dark); margin-right: 6px; }
+.tot-up b { color: var(--bronze); }
+.tot-note { margin: 14px 0 0; padding-top: 14px; border-top: 1px solid #3A2E25; font-size: 15px; line-height: 1.45; color: #D6C8B8; }
 .duo-sum { margin-top: 2px; }
 .duo-sum .eq { font-size: 22px; font-weight: 800; color: var(--ink); margin-right: 6px; }
 .duo-minus { margin: -2px 0 4px; font-size: 13px; line-height: 1.5; color: #8A7A6C; }
@@ -260,6 +266,12 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
         <p class="duo-minus">− себестоимость<br>− отдел продаж и маркетинг</p>
         <p class="duo-line duo-sum"><span class="eq">=</span><b>13,6 млн €</b> прибыли после продаж</p>
         <p class="duo-ros"><span>Рентабельность продаж <i>ROS</i></span><b>19,7%</b></p>
+      </div>
+      <div class="duo-card total">
+        <p class="duo-title">Итог</p>
+        <p class="tot-row"><b>−13 млн €</b> продаж</p>
+        <p class="tot-row tot-up"><b>+3 млн €</b> прибыли</p>
+        <p class="tot-note">Отдел продаж продал меньше, а компания заработала больше.</p>
       </div>
     </div>
   </div>
