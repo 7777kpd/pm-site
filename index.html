@@ -203,6 +203,13 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .vmodal iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; }
 .vmodal .vclose { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(239,231,220,.15); color: #EFE7DC; font-size: 24px; cursor: pointer; }
 </style>
+<script>
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "zclys65ngn");
+</script>
 </head>
 <body>
 
@@ -364,6 +371,19 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   document.querySelectorAll('.js-wa').forEach(function (a) { a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + text; });
   document.querySelectorAll('.js-tg').forEach(function (a) { a.href = 'https://t.me/' + TG_USERNAME + '?text=' + text; });
 
+  /* Аналитика: события в Clarity + счётчик для утреннего отчёта в Telegram (/api/e) */
+  function track(t) {
+    try { if (window.clarity) window.clarity('event', t); } catch (e) {}
+    try {
+      var body = JSON.stringify({ t: t });
+      if (navigator.sendBeacon) navigator.sendBeacon('/api/e', body);
+      else fetch('/api/e', { method: 'POST', body: body, keepalive: true });
+    } catch (e) {}
+  }
+  try { if (!sessionStorage.getItem('pm_v')) { sessionStorage.setItem('pm_v', '1'); track('view'); } } catch (e) { track('view'); }
+  document.querySelectorAll('.js-wa').forEach(function (a) { a.addEventListener('click', function () { track('wa'); }); });
+  document.querySelectorAll('.js-tg').forEach(function (a) { a.addEventListener('click', function () { track('tg'); }); });
+
   var bar = document.getElementById('topbar');
   var watched = [document.getElementById('hero-cta'), document.getElementById('request')];
   function onScreen(el) { if (!el) return false; var r = el.getBoundingClientRect(); return r.bottom > 80 && r.top < window.innerHeight; }
@@ -374,6 +394,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
   var play = document.getElementById('play');
   play.addEventListener('click', function () {
+    track('video');
     if (!YOUTUBE_ID) { window.open(CHANNEL_URL, '_blank', 'noopener'); return; }
     var m = document.createElement('div'); m.className = 'vmodal';
     m.innerHTML = '<div class="vbox"><button class="vclose" type="button" aria-label="Закрыть">×</button></div>';
