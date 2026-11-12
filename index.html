@@ -108,7 +108,9 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .author span { display: block; font-size: 14px; color: var(--on-dark-2); }
 .case { padding-block: 88px 96px; }
 .case h2 { color: var(--ink); }
-.video-frame.has-cover { background: #1C1612; }
+.video-frame.has-cover { background: #1C1612 url(video-cover.jpg) center / cover no-repeat; align-items: flex-end; justify-content: flex-start; padding: 0 0 5.5% 5.6%; box-sizing: border-box; }
+.video-frame.has-cover .play { width: clamp(48px, 10vw, 88px); height: clamp(48px, 10vw, 88px); box-shadow: 0 6px 24px rgba(0,0,0,.45); }
+.video-frame.has-cover .play svg { width: 40%; height: 40%; }
 .case .video figcaption { margin-top: 14px; font-size: 18px; font-weight: 700; line-height: 1.35; color: var(--ink); max-width: 860px; }
 .vc-kicker { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bronze-deep); }
 
@@ -244,7 +246,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
       </div>
     </div>
     <figure class="video">
-      <div class="video-frame">
+      <div class="video-frame has-cover">
         <button class="play" id="play" type="button" aria-label="Смотреть видео">
           <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg>
         </button>
@@ -334,7 +336,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   var WA_NUMBER = '4367762009510';
   var TG_USERNAME = 'DoroshchukConsulting';
   var FIRST_MESSAGE = 'Здравствуйте! Я с сайта «Прибыльный менеджмент».';
-  var YOUTUBE_ID = '';  /* id ролика, например dQw4w9WgXcQ из ссылки youtu.be/dQw4w9WgXcQ */
+  var YOUTUBE_ID = 'c92QFZObnDo';  /* id ролика, например dQw4w9WgXcQ из ссылки youtu.be/dQw4w9WgXcQ */
   var CHANNEL_URL = 'https://www.youtube.com/@ПрибыльныйМенеджмент';
 
   var text = encodeURIComponent(FIRST_MESSAGE);
