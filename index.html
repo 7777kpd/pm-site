@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Прибыльный менеджмент — консалтинг для директоров производства и дистрибуции</title>
-<meta name="description" content="Консалтинг для директоров производственных и дистрибуционных компаний: как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег. 10 недель работы в вашем бизнесе. Николай Дорощук.">
+<title>Прибыльный менеджмент — для производителей и дистрибьюторов | Дорощук Консалтинг</title>
+<meta name="description" content="Прибыльный менеджмент для производителей и дистрибьюторов: как сделать, чтобы каждый следующий заказ увеличивал не только оборот, но и прибыль. 10-недельный консалтинг, корпоративное обучение, STT-Navigator. Николай Дорощук.">
 <meta name="theme-color" content="#1C1612">
 <link rel="canonical" href="https://doroshchukconsulting.com/">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -202,6 +202,86 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .vmodal .vbox { position: relative; width: min(1100px, 100%); aspect-ratio: 16 / 9; }
 .vmodal iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; }
 .vmodal .vclose { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(239,231,220,.15); color: #EFE7DC; font-size: 24px; cursor: pointer; }
+
+.hero .eyebrow { margin-bottom: 16px; }
+.hero h1 em { font-style: italic; color: var(--bronze); }
+.aud { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; margin-top: 8px; }
+.aud-card { border-left: 3px solid var(--bronze-deep); padding: 4px 0 4px 18px; }
+.aud-card p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+.aud-card .aud-t { margin-bottom: 6px; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--bronze-deep); }
+.t100 { padding-block: 88px 96px; }
+.t100 h2 { color: var(--on-dark); }
+.t100-intro { margin: 14px 0 0; font-size: 18px; line-height: 1.5; color: var(--on-dark-2); }
+.t100-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; }
+.t100-card { background: var(--card); border: 1px solid var(--line-dark); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 4px; }
+.t100-card b { font-family: var(--display); font-size: 56px; line-height: 1; font-weight: 600; color: var(--bronze); }
+.t100-card span { font-size: 17px; font-weight: 700; color: var(--on-dark); }
+.t100-card i { font-style: normal; font-size: 14px; color: var(--on-dark-2); }
+.t100-note { margin: 22px 0 0; font-size: 15px; line-height: 1.5; color: var(--on-dark-2); max-width: 70ch; }
+.t100-link { display: inline-block; margin-top: 18px; font-weight: 700; color: var(--bronze); text-decoration: none; border-bottom: 1px solid currentColor; }
+@media (max-width: 640px) { .t100-grid { grid-template-columns: 1fr; gap: 10px; } .t100-card { flex-direction: row; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 16px 18px; } .t100-card b { font-size: 40px; } .t100 { padding-block: 64px 72px; } }
+
+.hero-ideas { display: inline-block; margin: 18px 0 0; font-weight: 700; color: var(--bronze); text-decoration: none; border-bottom: 1px solid rgba(201,149,103,.5); }
+.ideas { padding-block: 88px 96px; }
+.ideas h2 { color: var(--on-dark); }
+.ideas-intro { margin: 14px 0 0; font-size: 18px; line-height: 1.5; color: var(--on-dark-2); max-width: 62ch; }
+.stories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
+.story { background: var(--card); border: 1px solid var(--line-dark); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.story-img { position: relative; display: block; padding: 0; border: 0; background: #000; cursor: pointer; aspect-ratio: 4 / 5; }
+.story-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.story-play { position: absolute; left: 16px; bottom: 16px; width: 54px; height: 54px; border-radius: 50%; background: var(--bronze); display: none; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,.45); }
+.story.has-video .story-play { display: flex; }
+.story-soon-badge { position: absolute; left: 14px; top: 14px; padding: 5px 10px; border-radius: 99px; background: rgba(20,15,12,.8); color: var(--on-dark); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.story.has-video .story-soon-badge { display: none; }
+.story-body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+.story-k { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bronze); }
+.story h3 { margin: 0 0 8px; font-size: 22px; color: var(--on-dark); font-family: var(--display); font-weight: 600; }
+.story-d { margin: 0; font-size: 15px; line-height: 1.5; color: var(--on-dark-2); }
+.story-tag { margin: 12px 0 16px; font-size: 13px; font-weight: 700; color: var(--bronze); }
+.story-btn { margin-top: auto; align-self: flex-start; padding: 10px 16px; border-radius: 8px; border: 0; background: var(--bronze); color: #1C1612; font: inherit; font-weight: 800; cursor: pointer; display: none; }
+.story.has-video .story-btn { display: inline-block; }
+.story-soon { margin-top: auto; font-size: 14px; color: var(--on-dark-2); display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.story-soon span { width: 100%; }
+.story-soon a { color: var(--bronze); font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
+.story.has-video .story-soon { display: none; }
+.quiz { padding-block: 88px 96px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px; align-items: start; }
+.quiz-intro { margin: 14px 0 0; font-size: 18px; line-height: 1.5; color: var(--ink-2); }
+.qz { background: #FFFDF9; border: 1px solid #DCCFC2; border-radius: 10px; padding: 24px; }
+.qz-q { border: 0; margin: 0 0 18px; padding: 0 0 18px; border-bottom: 1px solid #E8DED2; }
+.qz-q legend { padding: 0; margin-bottom: 10px; font-weight: 700; font-size: 16px; line-height: 1.4; }
+.qz-o { display: flex; flex-wrap: wrap; gap: 8px; }
+.qz-o label { cursor: pointer; }
+.qz-o input { position: absolute; opacity: 0; pointer-events: none; }
+.qz-o span { display: inline-block; padding: 8px 14px; border-radius: 99px; border: 1px solid #DCCFC2; font-size: 14px; background: #fff; }
+.qz-o input:checked + span { background: var(--espresso); color: var(--on-dark); border-color: var(--espresso); }
+.qz-o input:focus-visible + span { outline: 2px solid var(--bronze); outline-offset: 2px; }
+.qz-verdict { margin: 0; font-family: var(--display); font-size: 24px; font-weight: 600; }
+.qz-sub { margin: 6px 0 14px; color: var(--ink-2); }
+.qz-hint { margin: 0; font-size: 14px; color: var(--ink-2); }
+@media (max-width: 900px) { .stories { grid-template-columns: 1fr; } .quiz { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 640px) { .ideas, .quiz { padding-block: 64px 72px; } .story-body { padding: 16px 18px 20px; } .pdf { padding: 20px; } .qz { padding: 18px; } }
+@media (max-width: 640px) { .topic .desc { display: none; } .topic { padding: 18px 20px; } .topics { gap: 10px; margin-top: 32px; } .program { padding-block: 64px 72px; } }
+.pdf { margin-top: 32px; padding: 32px; border-radius: 12px; background: var(--cream); color: var(--ink); display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: center; border: 2px solid var(--bronze); }
+.pdf-cover { width: 100%; height: auto; border-radius: 6px; box-shadow: 0 14px 34px rgba(28,22,18,.35); transform: rotate(-2deg); background: #fff; }
+.pdf-k { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--bronze-deep); }
+.pdf h3 { margin: 0 0 10px; font-family: var(--display); font-size: clamp(26px, 3.2vw, 34px); line-height: 1.15; font-weight: 600; }
+.pdf-lead { margin: 0; font-size: 17px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; }
+.pdf-list { margin: 14px 0 20px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.pdf-list li { position: relative; padding-left: 22px; font-size: 15px; color: var(--ink); }
+.pdf-list li::before { content: ""; position: absolute; left: 0; top: 7px; width: 10px; height: 10px; border-radius: 2px; background: var(--bronze); }
+.pdf-note { margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
+.story-read { margin: 0 0 12px; font-size: 14px; font-weight: 700; color: var(--on-dark-2); text-decoration: none; border-bottom: 1px dashed rgba(203,187,169,.6); align-self: flex-start; }
+.story-read:hover { color: var(--bronze); }
+@media (max-width: 760px) { .pdf { grid-template-columns: 1fr; padding: 22px; gap: 20px; } .pdf-cover { max-width: 180px; margin: 0 auto; } }
+.formats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 36px; }
+.format { background: var(--card); border: 1px solid var(--line-dark); border-radius: 10px; padding: 26px 28px; }
+.format-main { border: 2px solid var(--bronze); }
+.format-k { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--bronze); }
+.format h3 { margin: 0 0 8px; font-family: var(--display); font-size: 28px; font-weight: 600; color: var(--on-dark); }
+.format p:last-child { margin: 0; font-size: 16px; line-height: 1.55; color: var(--on-dark-2); }
+.topics-title { margin: 56px 0 0; font-family: var(--display); font-size: clamp(24px, 3vw, 32px); font-weight: 600; line-height: 1.2; color: var(--on-dark); max-width: 820px; }
+.topics-title + .topics { margin-top: 28px; }
+@media (max-width: 760px) { .formats { grid-template-columns: 1fr; } .format { padding: 20px; } .topics-title { margin-top: 40px; } }
 </style>
 <script>
   (function(c,l,a,r,i,t,y){
@@ -233,42 +313,114 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
     <section class="hero">
       <div class="hero-text">
-        <h1>Прибыльный менеджмент</h1>
-        <p class="lead">Как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег.</p>
-        <p class="badge">10-недельный консалтинг в вашем бизнесе</p>
+        <p class="eyebrow">Для производителей и дистрибьюторов</p>
+        <h1>Продажи растут.<br><em>А прибыль?</em></h1>
+        <p class="lead">Как сделать, чтобы каждый следующий заказ увеличивал не только оборот, но и прибыль компании?</p>
         <div class="msgr dark" id="hero-cta">
           <a class="wa js-wa" href="https://wa.me/4367762009510" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" stroke-width="2.6"/></svg></span>WhatsApp</a>
           <a class="tg js-tg" href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l16-7-5 15-3-6z"/><path d="M12 14l8-9"/></svg></span>Telegram</a>
         </div>
-        <p class="dark-note">Напишите. 15 минут разговора: услышим задачу и предложим, что включить в программу.</p>
+        <p class="dark-note">Напишите — пришлём пособие «Три метафоры» и ответим на вопросы.</p>
         <div class="author"><div><b>Николай Дорощук</b><span>Международный консалтинговый бизнес с 2001 года · работал с 1000+ руководителями</span></div></div>
       </div>
       <figure class="hero-photo">
         <img src="photo.jpg" width="720" height="914" alt="Николай Дорощук" fetchpriority="high">
-        <button class="hp-play" id="play" type="button" aria-label="Смотреть видео: почему больше продаж не означает больше прибыли">
-          <span class="hp-btn" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 30 30"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg></span>
-          <span class="hp-txt"><i>Видео · разбор</i>Почему больше продаж не означает больше прибыли?</span>
-        </button>
       </figure>
     </section>
   </div>
 </div>
 
+<section class="band-dark-2" id="ideas">
+  <div class="wrap ideas">
+    <p class="eyebrow">Три идеи прибыльного менеджмента</p>
+    <h2>Паровоз, лошади и мороженое</h2>
+    <p class="ideas-intro">Три короткие истории, которые помогают команде увидеть разницу между усилиями, оборотом и прибыльным результатом. Смотрите видео или читайте пособие.</p>
+    <div class="stories">
+      <article class="story" data-key="train">
+        <button class="story-img js-video" type="button" data-key="train" aria-label="Смотреть видео: Прибыльность продаж"><img src="story-train.jpg" width="560" height="700" alt="Паровоз" loading="lazy"><span class="story-play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg></span><span class="story-soon-badge">Скоро</span></button>
+        <div class="story-body">
+          <p class="story-k">История 01 · Паровоз</p>
+          <h3>Прибыльность продаж</h3>
+          <p class="story-d">Оборот — ещё не прибыль. Как оценить результат с учётом затрат на продажи и маркетинг.</p>
+          <p class="story-tag">Продажи ≠ прибыль</p>
+          <a class="story-read" href="#pdf">Нет времени? Читать в пособии ↓</a>
+          <button class="story-btn js-video" type="button" data-key="train">▶ Смотреть видео</button>
+          <div class="story-soon">
+            <span>Видео скоро. Сообщить о выходе:</span>
+            <a class="js-wa" data-ev="soon_train" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Паровоз»." href="https://wa.me/4367762009510" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="js-tg" data-ev="soon_train" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Паровоз»." href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+      </article>
+      <article class="story" data-key="horses">
+        <button class="story-img js-video" type="button" data-key="horses" aria-label="Смотреть видео: Система продаж"><img src="story-horses.jpg" width="560" height="700" alt="Лошади" loading="lazy"><span class="story-play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg></span><span class="story-soon-badge">Скоро</span></button>
+        <div class="story-body">
+          <p class="story-k">История 02 · Лошади</p>
+          <h3>Система продаж</h3>
+          <p class="story-d">Почему нельзя всё время подгонять команду и как перейти от усилий отдельных людей к системе.</p>
+          <p class="story-tag">Управление системой</p>
+          <a class="story-read" href="#pdf">Нет времени? Читать в пособии ↓</a>
+          <button class="story-btn js-video" type="button" data-key="horses">▶ Смотреть видео</button>
+          <div class="story-soon">
+            <span>Видео скоро. Сообщить о выходе:</span>
+            <a class="js-wa" data-ev="soon_horses" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Лошади»." href="https://wa.me/4367762009510" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="js-tg" data-ev="soon_horses" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Лошади»." href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+      </article>
+      <article class="story" data-key="icecream">
+        <button class="story-img js-video" type="button" data-key="icecream" aria-label="Смотреть видео: Качественная дистрибуция"><img src="story-icecream.jpg" width="560" height="700" alt="Мороженое" loading="lazy"><span class="story-play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 30 30"><path d="M10 6l15 9-15 9z" fill="#1C1612"/></svg></span><span class="story-soon-badge">Скоро</span></button>
+        <div class="story-body">
+          <p class="story-k">История 03 · Мороженое</p>
+          <h3>Качественная дистрибуция</h3>
+          <p class="story-d">Три слоя: системные заказы, прибыльный ассортимент и работа с клиентами без проблем.</p>
+          <p class="story-tag">Три слоя устойчивого роста</p>
+          <a class="story-read" href="#pdf">Нет времени? Читать в пособии ↓</a>
+          <button class="story-btn js-video" type="button" data-key="icecream">▶ Смотреть видео</button>
+          <div class="story-soon">
+            <span>Видео скоро. Сообщить о выходе:</span>
+            <a class="js-wa" data-ev="soon_icecream" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Мороженое»." href="https://wa.me/4367762009510" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="js-tg" data-ev="soon_icecream" data-msg="Здравствуйте! Сообщите, пожалуйста, когда выйдет видео «Мороженое»." href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="pdf" id="pdf">
+      <img class="pdf-cover" src="pdf-cover.jpg" width="480" height="679" alt="Обложка пособия «Продайте сотрудникам три вещи»" loading="lazy">
+      <div class="pdf-text">
+        <p class="pdf-k">Материал · PDF, 10 страниц</p>
+        <h3>Нет времени смотреть? Прочитайте за 10 минут</h3>
+        <p class="pdf-lead">Пособие «Продайте сотрудникам три вещи» — все три истории в тексте. И дополнение к видео, чтобы разобрать их с командой.</p>
+        <ul class="pdf-list">
+          <li>Паровоз, лошади и мороженое — текст и иллюстрации</li>
+          <li>Вопросы для обсуждения с командой</li>
+          <li>Ссылки на все три видео</li>
+        </ul>
+        <div class="msgr pdf-btns">
+          <a class="wa js-wa" data-ev="pdf" data-msg="Здравствуйте! Пришлите, пожалуйста, пособие «Три метафоры прибыльного менеджмента»." href="https://wa.me/4367762009510" target="_blank" rel="noopener">Получить в WhatsApp</a>
+          <a class="tg js-tg" data-ev="pdf" data-msg="Здравствуйте! Пришлите, пожалуйста, пособие «Три метафоры прибыльного менеджмента»." href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">Получить в Telegram</a>
+        </div>
+        <p class="pdf-note">Пришлём файл в ответ на сообщение.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="band-cream" id="case">
   <div class="wrap case">
-    <p class="eyebrow">Главное из видео</p>
-    <h2>Продажи ≠ прибыль</h2>
-    <p class="case-note">Коротко, если нет времени смотреть: одна компания, два периода.</p>
+    <p class="eyebrow">Реальный пример</p>
+    <h2>Почему рост оборота не гарантирует роста прибыли?</h2>
+    <p class="case-note">Одна компания, два периода.</p>
     <div class="duo">
       <div class="duo-card">
-        <p class="duo-title">Больше продаж — меньше прибыли</p>
+        <p class="duo-title">Период 1</p>
         <p class="duo-line"><b>82 млн €</b> продаж</p>
         <p class="duo-minus">− себестоимость<br>− отдел продаж и маркетинг</p>
         <p class="duo-line duo-sum"><span class="eq">=</span><b>10,6 млн €</b> прибыли после продаж</p>
         <p class="duo-ros"><span>Рентабельность продаж <i>ROS</i></span><b>12,9%</b></p>
       </div>
       <div class="duo-card win">
-        <p class="duo-title">Меньше продаж — больше прибыли</p>
+        <p class="duo-title">Период 4</p>
         <p class="duo-line"><b>69 млн €</b> продаж</p>
         <p class="duo-minus">− себестоимость<br>− отдел продаж и маркетинг</p>
         <p class="duo-line duo-sum"><span class="eq">=</span><b>13,6 млн €</b> прибыли после продаж</p>
@@ -276,19 +428,35 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
       </div>
       <div class="duo-card total">
         <p class="duo-title">Итог</p>
-        <p class="tot-row"><b>−13 млн €</b> продаж</p>
-        <p class="tot-row tot-up"><b>+3 млн €</b> прибыли</p>
-        <p class="tot-note">Отдел продаж продал меньше, а компания заработала больше.</p>
+        <p class="tot-row"><b>−16%</b> продаж</p>
+        <p class="tot-row tot-up"><b>+28%</b> прибыли после продаж</p>
       </div>
+    </div>
+    <div class="aud">
+      <div class="aud-card"><p class="aud-t">Производителям</p><p>Развивать продажи через дистрибьюторов: прибыльный ассортимент в точках и регулярные заказы.</p></div>
+      <div class="aud-card"><p class="aud-t">Дистрибьюторам</p><p>Выполнять планы поставщиков и растить прибыльность каждого заказа на устойчивой клиентской базе.</p></div>
     </div>
   </div>
 </section>
 
-<section class="band-dark-2" id="program">
+<section class="band-dark" id="program">
   <div class="wrap program">
-    <p class="eyebrow">Программа · 10 недель</p>
-    <h2>Семь вопросов, на которые бизнес получает ответ в своих цифрах</h2>
-    <p class="intro">Работаем внутри вашей компании, на ваших данных.</p>
+    <p class="eyebrow">Программа «Прибыльный менеджмент»</p>
+    <h2>От обучения до консалтинга</h2>
+    <p class="intro">Один метод — два формата. Начните с обучения команды или сразу с работы на цифрах вашей компании.</p>
+    <div class="formats">
+      <div class="format">
+        <p class="format-k">Формат 1</p>
+        <h3>Корпоративное обучение</h3>
+        <p>Команда осваивает принципы прибыльного менеджмента: продажи и прибыль, дистрибуция, KPI и управленческие решения.</p>
+      </div>
+      <div class="format format-main">
+        <p class="format-k">Формат 2 · 10 недель</p>
+        <h3>Консалтинг в вашей компании</h3>
+        <p>Начинаем с диагностики ваших цифр: где теряется прибыль. Затем вместе внедряем решения на ваших данных.</p>
+      </div>
+    </div>
+    <h3 class="topics-title">Семь вопросов, на которые бизнес получает ответ в своих цифрах</h3>
 
     <ol class="topics">
       <li class="topic"><span class="n">1</span><div class="body">
@@ -330,12 +498,52 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   </div>
 </section>
 
+<section class="band-dark-2" id="t100">
+  <div class="wrap t100">
+    <p class="eyebrow">STT-Navigator · целевая модель</p>
+    <h2>Три раза по 100</h2>
+    <p class="t100-intro">Ориентир качественной дистрибуции для всей клиентской базы.</p>
+    <div class="t100-grid">
+      <div class="t100-card"><b>100%</b><span>системных торговых точек</span><i>регулярно заказывают</i></div>
+      <div class="t100-card"><b>100%</b><span>прибыльной матрицы</span><i>в заказах клиентов</i></div>
+      <div class="t100-card"><b>100%</b><span>работы без проблем</span><i>у всех посещённых клиентов</i></div>
+    </div>
+    <p class="t100-note">Это цель, а не текущий результат. STT-Navigator показывает, где компания сейчас, и помогает удерживать достигнутое.</p>
+    <a class="t100-link" id="stt-link" href="https://stt-navigator.com/?src=pm" target="_blank" rel="noopener">Открыть STT-Navigator ↗</a>
+  </div>
+</section>
+
+<section class="band-cream" id="test">
+  <div class="wrap quiz">
+    <div class="quiz-head">
+      <p class="eyebrow">Самопроверка · 1 минута</p>
+      <h2>Насколько ваш бизнес управляет прибылью?</h2>
+      <p class="quiz-intro">Три вопроса. Это не аудит — только повод увидеть, что улучшить первым.</p>
+    </div>
+    <form class="qz" id="quiz" onsubmit="return false">
+      <fieldset class="qz-q" data-q="1"><legend>1. Отдел продаж знает, сколько прибыли после продаж приносит компании?</legend><div class="qz-o"><label><input type="radio" name="q1" value="0"><span>Да, регулярно</span></label><label><input type="radio" name="q1" value="1"><span>Частично</span></label><label><input type="radio" name="q1" value="2"><span>Пока нет</span></label></div></fieldset>
+      <fieldset class="qz-q" data-q="2"><legend>2. Вы видите долю клиентов, которые регулярно заказывают прибыльную матрицу?</legend><div class="qz-o"><label><input type="radio" name="q2" value="0"><span>Да, по клиентам</span></label><label><input type="radio" name="q2" value="1"><span>Только в целом</span></label><label><input type="radio" name="q2" value="2"><span>Пока нет</span></label></div></fieldset>
+      <fieldset class="qz-q" data-q="3"><legend>3. Вы фиксируете проблемы всех посещённых клиентов?</legend><div class="qz-o"><label><input type="radio" name="q3" value="0"><span>Да, системно</span></label><label><input type="radio" name="q3" value="1"><span>Выборочно</span></label><label><input type="radio" name="q3" value="2"><span>Пока нет</span></label></div></fieldset>
+      <div class="qz-res" id="quiz-res" hidden>
+        <p class="qz-verdict" id="quiz-verdict"></p>
+        <p class="qz-sub">Получите короткий разбор ответов — с чего начать в вашей компании:</p>
+        <div class="msgr">
+          <a class="wa js-wa" id="quiz-wa" data-ev="quiz" href="https://wa.me/4367762009510" target="_blank" rel="noopener">Разбор в WhatsApp</a>
+          <a class="tg js-tg" id="quiz-tg" data-ev="quiz" href="https://t.me/DoroshchukConsulting" target="_blank" rel="noopener">Разбор в Telegram</a>
+        </div>
+      </div>
+      <p class="qz-hint" id="quiz-hint">Ответьте на все три вопроса — появится результат.</p>
+    </form>
+  </div>
+</section>
+
+
 <section class="band-cream" id="request">
   <div class="wrap request">
     <div class="request-inner">
-        <p class="eyebrow">Связаться</p>
-        <h2>Напишите нам</h2>
-        <p>15 минут разговора: услышим вашу задачу, поясним формат и вместе решим, что включить в программу.</p>
+        <p class="eyebrow">Следующий шаг</p>
+        <h2>Посмотрим, где ваша компания теряет возможности для прибыльного роста</h2>
+        <p>Диагностика системы продаж или корпоративное обучение команды. 15 минут разговора — и решим, с чего начать.</p>
         <p class="status"><span class="dot" aria-hidden="true"></span>Обычно отвечаем сразу</p>
         <div class="msgr">
           <a class="wa js-wa" href="https://wa.me/4367762009510" target="_blank" rel="noopener">
@@ -367,9 +575,16 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   var YOUTUBE_ID = 'c92QFZObnDo';  /* id ролика, например dQw4w9WgXcQ из ссылки youtu.be/dQw4w9WgXcQ */
   var CHANNEL_URL = 'https://www.youtube.com/@ПрибыльныйМенеджмент';
 
-  var text = encodeURIComponent(FIRST_MESSAGE);
-  document.querySelectorAll('.js-wa').forEach(function (a) { a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + text; });
-  document.querySelectorAll('.js-tg').forEach(function (a) { a.href = 'https://t.me/' + TG_USERNAME + '?text=' + text; });
+  /* Видео трёх историй: впишите id ролика из ссылки youtu.be/XXXX. Пусто — карточка показывает «Скоро». */
+  var VIDEOS = { horses: 'aAJhSu6RcIg', train: 'c92QFZObnDo', icecream: '' };
+
+  function setMsg(a, msg) {
+    var t = encodeURIComponent(msg || FIRST_MESSAGE);
+    if (a.classList.contains('js-wa')) a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + t;
+    else a.href = 'https://t.me/' + TG_USERNAME + '?text=' + t;
+  }
+  document.querySelectorAll('.js-wa, .js-tg').forEach(function (a) { setMsg(a, a.getAttribute('data-msg')); });
+  document.querySelectorAll('.story').forEach(function (st) { st.classList.add('has-video'); });  /* у всех трёх историй есть видео */
 
   /* Аналитика: события в Clarity + счётчик для утреннего отчёта в Telegram (/api/e) */
   function track(t) {
@@ -381,8 +596,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
     } catch (e) {}
   }
   try { if (!sessionStorage.getItem('pm_v')) { sessionStorage.setItem('pm_v', '1'); track('view'); } } catch (e) { track('view'); }
-  document.querySelectorAll('.js-wa').forEach(function (a) { a.addEventListener('click', function () { track('wa'); }); });
-  document.querySelectorAll('.js-tg').forEach(function (a) { a.addEventListener('click', function () { track('tg'); }); });
+  function ev(name) { try { if (window.clarity) window.clarity('event', name); } catch (e) {} }
+  document.querySelectorAll('.js-wa').forEach(function (a) { a.addEventListener('click', function () { track('wa'); if (a.dataset.ev) ev(a.dataset.ev); }); });
+  document.querySelectorAll('.js-tg').forEach(function (a) { a.addEventListener('click', function () { track('tg'); if (a.dataset.ev) ev(a.dataset.ev); }); });
+  var stt = document.getElementById('stt-link');
+  if (stt) stt.addEventListener('click', function () { try { if (window.clarity) window.clarity('event', 'stt'); } catch (e) {} });
 
   var bar = document.getElementById('topbar');
   var watched = [document.getElementById('hero-cta'), document.getElementById('request')];
@@ -392,15 +610,12 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   window.addEventListener('resize', updateBar);
   updateBar();
 
-  var play = document.getElementById('play');
-  play.addEventListener('click', function () {
-    track('video');
-    if (!YOUTUBE_ID) { window.open(CHANNEL_URL, '_blank', 'noopener'); return; }
+  function openVideo(id, title) {
     var m = document.createElement('div'); m.className = 'vmodal';
     m.innerHTML = '<div class="vbox"><button class="vclose" type="button" aria-label="Закрыть">×</button></div>';
     var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + YOUTUBE_ID + '?autoplay=1&rel=0';
-    f.title = 'Почему больше продаж не означает больше прибыли?';
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+    f.title = title || 'Видео';
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
     m.firstChild.appendChild(f);
     function close() { m.remove(); document.removeEventListener('keydown', esc); }
@@ -408,6 +623,30 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
     m.addEventListener('click', function (e) { if (e.target === m || e.target.className === 'vclose') close(); });
     document.addEventListener('keydown', esc);
     document.body.appendChild(m);
+  }
+  document.querySelectorAll('.js-video').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var key = b.getAttribute('data-key'), id = VIDEOS[key];
+      if (!id) { track('video'); ev('video_' + key); window.open(CHANNEL_URL, '_blank', 'noopener'); return; }  /* ссылки ещё нет — открываем канал */
+      track('video'); ev('video_' + key);
+      openVideo(id, b.closest('.story').querySelector('h3').textContent);
+    });
+  });
+
+  /* Самопроверка */
+  var TOPICS = ['прибыльность продаж', 'прибыльная матрица в заказах', 'работа с клиентами без проблем'];
+  var quiz = document.getElementById('quiz');
+  if (quiz) quiz.addEventListener('change', function () {
+    var ans = [1, 2, 3].map(function (n) { var c = quiz.querySelector('input[name="q' + n + '"]:checked'); return c ? +c.value : -1; });
+    if (ans.indexOf(-1) !== -1) return;
+    var labels = [1, 2, 3].map(function (n) { return quiz.querySelector('input[name="q' + n + '"]:checked').nextElementSibling.textContent; });
+    var worst = ans.indexOf(Math.max.apply(null, ans));
+    var verdict = Math.max.apply(null, ans) === 0 ? 'Сильная база. Разберём, где расти дальше.' : 'Первая точка роста: ' + TOPICS[worst] + '.';
+    document.getElementById('quiz-verdict').textContent = verdict;
+    var msg = 'Здравствуйте! Прошёл самопроверку на сайте: 1) ' + labels[0] + '; 2) ' + labels[1] + '; 3) ' + labels[2] + '. Хочу короткий разбор.';
+    setMsg(document.getElementById('quiz-wa'), msg); setMsg(document.getElementById('quiz-tg'), msg);
+    document.getElementById('quiz-res').hidden = false; document.getElementById('quiz-hint').hidden = true;
+    ev('quiz_done');
   });
 })();
 </script>
