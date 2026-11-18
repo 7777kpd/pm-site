@@ -11,8 +11,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Дорощук Консалтинг">
-<meta property="og:title" content="Прибыльный менеджмент">
-<meta property="og:description" content="Как сделать, чтобы рост продаж приносил прибыль, а не требовал новых денег. 10-недельный консалтинг в вашем бизнесе.">
+<meta property="og:title" content="Продажи растут. А прибыль?">
+<meta property="og:description" content="Прибыльный менеджмент для производителей и дистрибьюторов: три идеи в видео и пособии, реальный пример, обучение и консалтинг.">
 <meta property="og:url" content="https://doroshchukconsulting.com/">
 <meta property="og:image" content="https://doroshchukconsulting.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -498,20 +498,6 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   </div>
 </section>
 
-<section class="band-dark-2" id="t100">
-  <div class="wrap t100">
-    <p class="eyebrow">STT-Navigator · целевая модель</p>
-    <h2>Три раза по 100</h2>
-    <p class="t100-intro">Ориентир качественной дистрибуции для всей клиентской базы.</p>
-    <div class="t100-grid">
-      <div class="t100-card"><b>100%</b><span>системных торговых точек</span><i>регулярно заказывают</i></div>
-      <div class="t100-card"><b>100%</b><span>прибыльной матрицы</span><i>в заказах клиентов</i></div>
-      <div class="t100-card"><b>100%</b><span>работы без проблем</span><i>у всех посещённых клиентов</i></div>
-    </div>
-    <p class="t100-note">Это цель, а не текущий результат. STT-Navigator показывает, где компания сейчас, и помогает удерживать достигнутое.</p>
-    <a class="t100-link" id="stt-link" href="https://stt-navigator.com/?src=pm" target="_blank" rel="noopener">Открыть STT-Navigator ↗</a>
-  </div>
-</section>
 
 <section class="band-cream" id="test">
   <div class="wrap quiz">
@@ -522,8 +508,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
     </div>
     <form class="qz" id="quiz" onsubmit="return false">
       <fieldset class="qz-q" data-q="1"><legend>1. Отдел продаж знает, сколько прибыли после продаж приносит компании?</legend><div class="qz-o"><label><input type="radio" name="q1" value="0"><span>Да, регулярно</span></label><label><input type="radio" name="q1" value="1"><span>Частично</span></label><label><input type="radio" name="q1" value="2"><span>Пока нет</span></label></div></fieldset>
-      <fieldset class="qz-q" data-q="2"><legend>2. Вы видите долю клиентов, которые регулярно заказывают прибыльную матрицу?</legend><div class="qz-o"><label><input type="radio" name="q2" value="0"><span>Да, по клиентам</span></label><label><input type="radio" name="q2" value="1"><span>Только в целом</span></label><label><input type="radio" name="q2" value="2"><span>Пока нет</span></label></div></fieldset>
-      <fieldset class="qz-q" data-q="3"><legend>3. Вы фиксируете проблемы всех посещённых клиентов?</legend><div class="qz-o"><label><input type="radio" name="q3" value="0"><span>Да, системно</span></label><label><input type="radio" name="q3" value="1"><span>Выборочно</span></label><label><input type="radio" name="q3" value="2"><span>Пока нет</span></label></div></fieldset>
+      <fieldset class="qz-q" data-q="2"><legend>2. В зарплате отдела продаж есть показатель качественной дистрибуции по трём уровням: регулярные заказы, прибыльная матрица, работа без проблем?</legend><div class="qz-o"><label><input type="radio" name="q2" value="0"><span>Да, все три</span></label><label><input type="radio" name="q2" value="1"><span>Частично</span></label><label><input type="radio" name="q2" value="2"><span>Пока нет</span></label></div></fieldset>
+      <fieldset class="qz-q" data-q="3"><legend>3. Главная метрика вашего бизнеса — отдача на капитал: прибыль ÷ (дебиторка + товарные запасы)?</legend><div class="qz-o"><label><input type="radio" name="q3" value="0"><span>Да, считаем регулярно</span></label><label><input type="radio" name="q3" value="1"><span>Иногда</span></label><label><input type="radio" name="q3" value="2"><span>Пока нет</span></label></div></fieldset>
       <div class="qz-res" id="quiz-res" hidden>
         <p class="qz-verdict" id="quiz-verdict"></p>
         <p class="qz-sub">Получите короткий разбор ответов — с чего начать в вашей компании:</p>
@@ -634,7 +620,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   });
 
   /* Самопроверка */
-  var TOPICS = ['прибыльность продаж', 'прибыльная матрица в заказах', 'работа с клиентами без проблем'];
+  var TOPICS = ['прибыльность продаж', 'мотивация на качественную дистрибуцию', 'отдача на капитал'];
   var quiz = document.getElementById('quiz');
   if (quiz) quiz.addEventListener('change', function () {
     var ans = [1, 2, 3].map(function (n) { var c = quiz.querySelector('input[name="q' + n + '"]:checked'); return c ? +c.value : -1; });
